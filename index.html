@@ -27,17 +27,17 @@
     <meta name="theme-color" content="#0d9488" media="(prefers-color-scheme: light)" />
     <meta name="theme-color" content="#0a0f1a" media="(prefers-color-scheme: dark)" />
 
-    <style>:root{--sat:env(safe-area-inset-top,0px);--sab:env(safe-area-inset-bottom,0px);--sal:env(safe-area-inset-left,0px);--sar:env(safe-area-inset-right,0px)}body{-webkit-touch-callout:none;-webkit-user-select:none;user-select:none;overscroll-behavior-y:none;background:#f0f4f8;font-family:Cairo,sans-serif}.dark body{background:#0a0f1a}input,textarea{-webkit-user-select:text!important;user-select:text!important}</style>
-    <script type="module" crossorigin src="./assets/index-jwjOuyiz.js"></script>
-    <link rel="stylesheet" crossorigin href="./assets/index-CS8_RnwW.css">
+    <style>html,body{background-color:#f0f4f8;width:100%;min-height:100%;margin:0;padding:0;font-family:Cairo,sans-serif;-webkit-overflow-scrolling:touch!important;touch-action:pan-y pinch-zoom!important}.dark html,.dark body{background-color:#0a0f1a}#root{width:100%;min-height:100%}</style>
+    <script type="module" crossorigin src="./assets/index-BDHJFBMQ.js"></script>
+    <link rel="stylesheet" crossorigin href="./assets/index-DLJi8TDP.css">
   </head>
-  <body class="antialiased overflow-x-hidden min-h-screen">
+  <body class="antialiased min-h-screen">
     <div id="root"></div>
     <script>
       // Register Service Worker for 100% Offline Support on iPhone
       if ('serviceWorker' in navigator) {
         window.addEventListener('load', () => {
-          navigator.serviceWorker.register('/sw.js').catch((err) => {
+          navigator.serviceWorker.register('./sw.js').catch((err) => {
             console.log('SW registration error:', err);
           });
         });
